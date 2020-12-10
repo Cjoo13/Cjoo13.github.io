@@ -1,0 +1,159 @@
+body
+{
+	font-family:'Raleway', sans-serif;
+}
+
+body, nav, ul
+{
+	margin: 0;
+	padding: 0;
+}
+
+#bloc_page
+{
+	max-width: 1300px;
+	margin: auto;
+}
+
+section
+{
+	display: flex;
+}
+
+.fa-star, .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog
+{
+	color: #0065FC;
+}
+
+#hebergements, #populaires, footer
+{
+	background-color: #F2F2F2;
+	display: flex;
+	margin: 30px;
+}
+
+#populaires
+{
+	flex-direction: column;
+	max-width: 26%;
+	flex: 1.2;
+}
+#titre_principal nav ul
+{
+	list-style-type: none;
+	display: flex;
+	justify-content: flex-end;
+	text-decoration: none;
+	font-size: 0.9em;
+}
+
+ul
+{
+	margin: 0;
+}
+
+nav li
+{
+	margin: 0;
+	width: 200px;
+}
+
+#filtres_all
+{
+	font-weight: bold;
+	display: flex;
+	justify-content: space-between;
+	max-width: 700px;
+}
+
+footer
+{
+	display: flex;
+	justify-content: space-around;
+}
+
+footer nav ul
+{
+	font-size: 0.8em;
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
+	text-decoration: none;
+}
+
+#hebergements
+{
+	display: flex;
+	align-items: flex-start;
+	align-content: flex-start;
+	flex-wrap: wrap;
+	max-width: 60%;
+}
+
+
+#populaires img
+{
+	max-width: 50%;
+}
+
+#activites figure, img
+{
+	height: 20%;
+	max-width: 75%;
+}
+
+p
+{
+	font-size: 0.8em;
+}
+
+#first_line
+{
+	display: flex;
+	justify-content: space-around;
+}
+
+#second_line
+{
+	display: flex;
+	justify-content: space-around;
+}
+
+nav a
+{
+	text-decoration: none;
+}
+
+#activites
+{
+	display: flex;
+}
+
+#hebergements, #populaires
+{
+	border-radius: 20px / 10px;
+}
+
+img
+{
+	border-radius: 20px / 10px;
+}
+
+#hebergements figure
+{
+	background-color: white;
+	max-width: 50%;
+	height: 500px;
+}
+
+#filtres_all
+{
+	display: flex;
+}
+
+#eco, #familial, #romantique, #animaux
+{
+	display: flex;
+	justify-content: space-around;
+	border-radius: 20px / 10px;
+}
