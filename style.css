@@ -42,6 +42,7 @@ nav a
 	max-width: 1280px;
 	margin: auto;
 	padding: 8px;
+	padding-top: 20px;
 }
 
 /* HEADER */
@@ -49,6 +50,7 @@ nav a
 #titre_principal
 {
 	display: flex;
+	margin-bottom: 20px;
 }
 
 #navigation
@@ -82,6 +84,7 @@ ul
 #barre_recherche
 {
 	display: flex;
+	margin-bottom: 10px;
 }
 
 #barre_recherche_texte h3
@@ -217,7 +220,7 @@ section
 {
 	width: 68%;
 	flex-direction: column;
-	margin-right: 30px;
+	margin-right: 39px;
 	margin-top: 30px;
 	margin-bottom: 30px;
 }
@@ -238,7 +241,7 @@ section
 	display: flex;
 	margin-left: 0;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 	width: 100%;
 }
@@ -247,7 +250,8 @@ section
 #hebergements h2
 {
 	margin-left: 3%;
-	margin-top: 4.5%;
+	margin-block-start: 1.5em;
+	margin-block-end: 0.2em;
 }
 
 
@@ -269,6 +273,7 @@ section
 	background: white;
 	width: 220px;
 	padding-left: 10px;
+	padding-top: 3px;
 }
 
 #hebergements img
@@ -288,16 +293,26 @@ section
 	font-size: 10px;
 }
 
-#hebergements figure h3, #hebergements p
+#hebergements figure h3
 {
 	margin-left: 0;
 	margin-top: 0;
-	margin-block: 0.3em;
+	margin-block: 0.2em;
+	padding-top: 2px;
+}
+
+#hebergements p
+{
+	margin-left: 0;
+	margin-top: 0;
+	margin-block: 0em;	
 }
 
 #afficher
 {
-	margin: 25px;
+	margin-left: 25px;
+	margin-top: 25px;
+	margin-bottom: 40px;
 	font-weight: bold;
 	font-size: 1.3em;
 }
@@ -308,9 +323,11 @@ section
 {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	width: 32%;
 	margin-top: 30px;
 	margin-bottom: 30px;
+	padding-bottom: 20px;
 }
 
 #populaires img
@@ -322,11 +339,9 @@ section
 #populaires figure
 {
 	background-color: white;
-	width: 350px;
-	height: 125px;
+	width: 340px;
+	height: 140px;
 	padding: 3px;
-	margin: 25px;
-	margin-top: 15px;
 	border-radius: 10px;
 	box-shadow: 0 4px 6px #0000001f;
 }
@@ -340,12 +355,15 @@ section
 
 #populaires h2
 {
-	margin-top: 8%;
+	margin-right: 160px;
+	margin-block-start: 1.5em;
+	margin-block-end: 0.2em;
 }
 
 #populaires p
 {
 	margin-block: 0.8em;
+	margin-bottom: 20px;
 }
 
 #populaires h3
@@ -360,7 +378,6 @@ section
 	align-items: baseline;
 	padding-right: 5%;
 	margin-left: 5%;
-	margin-top: 2%;
 }
 
 /* Article de la 2ème section qui concerne les activités */
@@ -368,11 +385,7 @@ section
 #details_act
 {
 	display: flex;
-}
-
-#activites h2
-{
-	margin-bottom: 5%;
+	margin-bottom: 30px;
 }
 
 #activites figure
@@ -409,10 +422,10 @@ section
 
 #pomegues
 {
-	height: 250px;
+	height: 244px;
 	border-radius: 10px;
 	box-shadow: 0 4px 6px #0000001f;
-	margin-bottom: 17px;
+	margin-bottom: 24px;
 }
 
 #frioul
@@ -430,10 +443,10 @@ section
 
 #notre_dame
 {
-	height: 200px;
+	height: 194px;
 	border-radius: 10px;
 	box-shadow: 0 4px 6px #0000001f;
-	margin-bottom: 17px;
+	margin-bottom: 24px;
 }
 
 #longchamp
@@ -535,6 +548,22 @@ footer
 	margin-left: 30px;
 	margin-right: 30px;
 	margin-bottom: 30px;
+	padding-bottom: 20px;
+}
+
+footer h3
+{
+	padding-top: 30px;
+}
+
+#a_propos
+{
+	margin-left: 10px;
+}
+
+#assistance
+{
+	padding-right: 130px;
 }
 
 footer div
@@ -542,9 +571,14 @@ footer div
 	width: 20%;
 }
 
+footer li
+{
+	padding-bottom: 10px;
+}
+
 footer nav ul
 {
-	font-size: 0.8em;
+	font-size: 0.9em;
 	display: flex;
 	flex-direction: column;
 	list-style-type: none;
