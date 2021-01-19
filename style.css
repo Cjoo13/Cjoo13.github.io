@@ -5,7 +5,7 @@ body
 	font-family:'Raleway', sans-serif;
 }
 
-body, nav, ul
+body, nav, ul, p, h3
 {
 	margin: 0;
 	padding: 0;
@@ -13,7 +13,7 @@ body, nav, ul
 
 h3
 {
-	font-size: 0.9em;
+	font-size: 1em;
 }
 
 h2
@@ -28,13 +28,19 @@ img
 
 p
 {
-	font-size: 0.8em;
+	font-size: 0.9em;
 }
 
-nav a
+a
 {
 	text-decoration: none;
 	color: black;
+}
+
+ul
+{
+	text-decoration: none;
+	list-style-type: none;
 }
 
 #bloc_page1
@@ -52,6 +58,7 @@ nav a
 {
 	display: flex;
 	margin-bottom: 20px;
+	justify-content: space-between;
 }
 
 #logo
@@ -69,67 +76,71 @@ nav a
 	list-style-type: none;
 	display: flex;
 	justify-content: flex-end;
-	text-decoration: none;
 	font-size: 0.9em;
 }
 
-ul
+ul li
 {
 	margin: 0;
 }
 
-#titre_principal nav li
+#titre_principal li
 {
-	width: 120px;
 	padding-top: 30px;
-	display: flex;
-	justify-content: center;
 }
 
-.filtre_blue
+#barre_recherche_texte
 {
-	border-top: 3px solid #0065fc00;
+	margin-bottom: 15px;
 }
 
-.filtre_blue:hover
+#filtres
+{
+	display: flex;
+	align-items: center;
+}
+
+#logo ul
+{
+	display: none;
+}
+
+#filtre_normal
+{
+	display: flex;
+
+}
+
+.filtre_n:hover
 {
     border-top: 3px solid #0065FC;
 }
 
-.filtre_blue a:hover
+.filtre_n a:hover
 {
 	color: #0065FC;
 }
 
-.filtre_act
+.filtre_n
 {
 	border-top: 3px solid #0065fc00;
-	margin-left: 30px;
+	margin-left: 70px;
 }
 
-.filtre_inscr
+#filtre_blue
 {
 	border-top: 3px solid #0065fc00;
-	margin-right: -5px;
+	order: 1;
+	margin-left: 70px;
 }
 
-.filtre_act:hover
-{
-	border-top: 3px solid #0065fc;
-}
-
-.filtre_act a:hover
-{
-	color: #0065FC;
-}
-
-.filtre_inscr a
+#filtre_blue a
 {
 	color: blue;
 	font-weight: bold;
 }
 
-.filtre_inscr:hover
+#filtre_blue:hover
 {
 	border-top: 3px solid #0065fc;
 }
@@ -181,6 +192,11 @@ ul
 	border-style: none;
 }
 
+#search_but i
+{
+	display: none;
+}
+
 #filtres_all
 {
 	font-weight: bold;
@@ -196,13 +212,18 @@ ul
 	display: flex;
 	align-items: center;
 	border: 1px solid #8080804d;
-	border-radius: 30px;	
+	border-radius: 30px;
+	cursor: pointer;	
 }
 
 #cartouchef p:hover
 {
-	text-shadow: currentColor;
 	color: blue;
+}
+
+#cartouchef:hover
+{
+	transform: scale(1.02);
 }
 
 #cartouchef p
@@ -211,6 +232,30 @@ ul
 	padding-right: 10px;
 }
 
+#cartouche_eco
+{
+	display: flex;
+	align-items: center;
+	border: 1px solid #8080804d;
+	border-radius: 30px;
+	cursor: pointer;
+}
+
+#cartouche_eco p:hover
+{
+	color: blue;
+}	
+
+#cartouche_eco:hover
+{
+	transform: scale(1.02);
+}
+
+#cartouche_eco p
+{
+	margin-left: 5px;
+	padding-right: 10px;
+}
 
 .cartouche
 {
@@ -218,6 +263,12 @@ ul
 	align-items: center;
 	border: 1px solid #8080804d;
 	border-radius: 30px;
+	cursor: pointer;
+}
+
+.cartouche:hover
+{
+	transform: scale(1.02);
 }
 
 .cartouche p:hover
@@ -318,6 +369,12 @@ section
 	margin: 13px;
 	overflow: hidden;
 	box-shadow: 0 4px 6px #0000001f;
+	cursor: pointer;
+}
+
+#hebergements figure:hover
+{
+	transform: scale(1.02);
 }
 
 #hebergements figcaption
@@ -349,17 +406,12 @@ section
 
 #hebergements figure h3
 {
-	margin-left: 0;
-	margin-top: 0;
-	margin-block: 0.2em;
 	padding-top: 2px;
 }
 
 #hebergements p
 {
-	margin-left: 0;
-	margin-top: 0;
-	margin-block: 0em;	
+	margin-top: 3px;
 }
 
 #afficher
@@ -402,6 +454,11 @@ section
 	box-shadow: 0 4px 6px #0000001f;
 }
 
+#populaires figure:hover
+{
+	transform: scale(1.02);
+}
+
 #populaires figcaption
 {
 	float: right;
@@ -418,13 +475,13 @@ section
 
 #populaires p
 {
-	margin-block: 0.8em;
 	margin-bottom: 20px;
 }
 
 #populaires h3
 {
-	margin-block-end: 0.3em;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 #titre_popu
@@ -444,30 +501,29 @@ section
 	margin-bottom: 30px;
 }
 
+.big_act 
+{
+	border-radius: 10px;
+	box-shadow: 0 4px 6px #0000001f;
+	height: 450px;
+	margin: 0;
+}
+
+.big_act h3
+{
+	margin-bottom: 14px;
+	padding-top: 15px;
+
+}
+
 #activites figure
 {
-	
-	height: 450px;	
-    width: 100%;
+	width: 290px;
 }
 
-.vieux_port 
+#activites figure:hover
 {
-	margin-left: 0;
-	border-radius: 10px;
-	box-shadow: 0 4px 6px #0000001f;
-}
-
-.calanques 
-{
-	border-radius: 10px;
-	box-shadow: 0 4px 6px #0000001f;
-}
-
-#activites div
-{	
-	width: 100%;
-	margin-top: 8px;
+	transform: scale(1.02);
 }
 
 #pomegues_frioul
@@ -481,7 +537,7 @@ section
 	height: 244px;
 	border-radius: 10px;
 	box-shadow: 0 4px 6px #0000001f;
-	margin-bottom: 24px;
+	margin-top: 0;
 }
 
 #frioul
@@ -502,7 +558,7 @@ section
 	height: 194px;
 	border-radius: 10px;
 	box-shadow: 0 4px 6px #0000001f;
-	margin-bottom: 24px;
+	margin-top: 0;
 }
 
 #longchamp
@@ -512,7 +568,7 @@ section
 	box-shadow: 0 4px 6px #0000001f;
 }
 
-#activites div img
+#activites figure img
 {
 	width: 100%;
 	height: 100%;
@@ -524,64 +580,16 @@ section
 	margin-left: 4%;
 }
 
-#pomegues h3
+#pomegues h3, #notre_dame h3, #frioul h3, #longchamp h3
 {
-	margin-top: -48px;
-	margin-left: -1px;
     height: 44px;
-    position: absolute;
     background: white;
-    width: 282px;
+    width: 279px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     display: flex;
     align-items: center;
-    padding-left: 10px;
-}
-
-#notre_dame h3
-{
-	margin-top: -48px;
-	margin-left: -1px;
-    height: 44px;
-    position: absolute;
-    background: white;
-    width: 282px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-}
-
-#frioul h3
-{
-	margin-top: -48px;
-	margin-left: -1px;
-    height: 44px;
-    position: absolute;
-    background: white;
-    width: 282px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-}
-
-#longchamp h3
-{
-	margin-top: -48px;
-	margin-left: -1px;
-    height: 44px;
-    position: absolute;
-    background: white;
-    width: 282px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
+    padding-bottom: 1px;
 }
 
 #activites figcaption
@@ -611,6 +619,7 @@ footer
 footer h3
 {
 	padding-top: 30px;
+	padding-bottom: 20px;
 }
 
 #a_propos
@@ -659,24 +668,117 @@ footer nav ul
 	#bloc_page1
 	{
 		width: auto;
-		padding: 0;
+		padding: 5px;
+	}
+
+	#titre_principal
+	{
+		flex-direction: column;
 	}
 
 	#titre_principal nav ul
 	{
-		align-items: flex-end;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	#titre_principal nav li 
+	{
+    	padding-top: 30px;
+	}
+
+	#logo
+	{
+		display: flex;
+		justify-content: space-between;
+		padding: 10px;
+	}
+
+	#logo ul
+	{
+		display: inline-block;
+	}
+
+	#logo li
+	{
+		padding-top: 15px;
+	}
+
+	#barre_recherche
+	{
+		margin-top: 20px;
+	}
+
+	.reche
+	{
+		display: none;
+	}
+
+	#search_but i
+	{
+		display: inline-block;
+	}
+
+	#filtre_normal
+	{
+		width: auto;
+	}
+
+	#filtre_blue
+	{
+		margin: 0;
+		display: none;
+	}
+
+	#filtre_blue_mobile a
+	{
+		color: blue;
+		font-weight: bold;
+	}
+
+	.filtre_n
+	{
+		border-bottom: 3px solid lightgray;
+		margin: 0;
+		padding: 41px;
+		padding-bottom: 10px;
+		border-top: none;
+	}
+
+	.filtre_n:hover
+	{
+		border-top: none;
+		border-bottom: 3px solid #0065FC;
+
 	}
 
 	#filtres_all
 	{
-		display: flex;
 		flex-wrap: wrap;
-		flex-direction: column;
+		justify-content: flex-start;
+		width: 60%;
+	}
+
+	#filtres
+	{
+		align-items: flex-start;
 	}
 
 	.cartouche
 	{
-		width: auto;
+		margin-bottom: 5%;
+
+	}
+
+	#cartouche_eco
+	{
+		margin-top: 11%;
+		margin-bottom: 5%;
+	}
+
+	#cartouchef
+	{
+		margin-bottom: 5%;
 	}
 
 	section
@@ -694,6 +796,11 @@ footer nav ul
 	#titre_popu
 	{
 		justify-content: space-between;
+	}
+
+	#populaires h2
+	{
+		margin-right: 83px;
 	}
 
 	#populaires figure
@@ -722,6 +829,11 @@ footer nav ul
 		width: 100%;
 	}
 
+	#afficher
+	{
+		margin-left: 0;
+	}
+
 	#activites
 	{
 		width: 100%;
@@ -730,14 +842,16 @@ footer nav ul
 		margin: auto;
 	}
 
-	#details_act
+	#activites figure
 	{
-		width: 90%;
+		height: 200px;
+		margin: 10px;
+		margin-right: 0;
+		margin-left: 0;
 	}
 
-	#activites div, #activites figure
+	#details_act
 	{
-		width: 90%;
 		align-items: center;
 		flex-direction: column;
 	}
@@ -749,7 +863,12 @@ footer nav ul
 
 	#activites figcaption
 	{
-		width: 81%;
+		width: 91%;
+	}
+
+	#activites:hover figcaption
+	{
+		width: 100%;
 	}
 
 	footer
@@ -773,7 +892,7 @@ footer nav ul
 
 }
 
-@media (min-width: 768px) and (max-width: 1388px)
+/*@media (min-width: 768px) and (max-width: 1388px)
 {
 	#bloc_page
 	{
@@ -835,4 +954,4 @@ footer nav ul
 		align-items: center;
 		flex-direction: column;
 	}
-}
+}*/
