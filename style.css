@@ -5,10 +5,15 @@ body
 	font-family:'Raleway', sans-serif;
 }
 
-body, nav, ul, p, h3
+body, nav, ul, p, h1, h2, h3
 {
 	margin: 0;
 	padding: 0;
+}
+
+h1
+{
+	font-size: 1.2em;
 }
 
 h3
@@ -19,6 +24,7 @@ h3
 h2
 {
 	font-size: 1.2em;
+
 }
 
 img
@@ -92,6 +98,12 @@ ul li
 #barre_recherche_texte
 {
 	margin-bottom: 15px;
+}
+
+#barre_recherche_texte h2
+{
+	font-size: 0.9em;
+	font-weight: 400;
 }
 
 #filtres
@@ -476,7 +488,7 @@ section
 
 #populaires p
 {
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
 
 #populaires h3
@@ -684,7 +696,6 @@ footer nav ul
 
 	#titre_principal nav ul
 	{
-		flex-wrap: wrap;
 		justify-content: space-around;
 	}
 
