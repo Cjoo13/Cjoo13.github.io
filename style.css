@@ -205,6 +205,7 @@ ul li
 	width: 60%;
 	padding: 15px;
 	padding-left: 0;
+	padding-right: 0;
 }
 
 #cartouchef
@@ -668,6 +669,11 @@ footer nav ul
 	#bloc_page1
 	{
 		width: auto;
+		padding: 0;
+	}
+
+	header
+	{
 		padding: 5px;
 	}
 
@@ -755,13 +761,12 @@ footer nav ul
 	#filtres_all
 	{
 		flex-wrap: wrap;
-		justify-content: flex-start;
-		width: 60%;
 	}
 
 	#filtres
 	{
 		align-items: flex-start;
+		padding-bottom: 15px;
 	}
 
 	.cartouche
@@ -772,7 +777,6 @@ footer nav ul
 
 	#cartouche_eco
 	{
-		margin-top: 11%;
 		margin-bottom: 5%;
 	}
 
@@ -806,6 +810,8 @@ footer nav ul
 	#populaires figure
 	{
 		width: 90%;
+		margin-right: 0;
+		margin-left: 0;
 	}
 
 	#populaires figure img
@@ -817,11 +823,15 @@ footer nav ul
 	{
 		width: 100%;
 		background-color: white;
+		margin-right: 0;
+		margin-left: 0;
 	}
 
 	#hebergements figure
 	{
 		width: 90%;
+		margin-left: 0;
+		margin-right: 0;
 	}
 
 	#hebergements figcaption
@@ -854,6 +864,11 @@ footer nav ul
 	{
 		align-items: center;
 		flex-direction: column;
+	}
+
+	#activites h2
+	{
+		margin-left: 3%;
 	}
 
 	#activites h3
