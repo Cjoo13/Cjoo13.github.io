@@ -508,6 +508,11 @@ section
 
 /* Article de la 2ème section qui concerne les activités */
 
+#activites h2
+{
+	margin-bottom: 20px;
+}
+
 #details_act
 {
 	display: flex;
@@ -736,11 +741,6 @@ footer nav ul
 		display: inline-block;
 	}
 
-	#filtre_normal
-	{
-		width: auto;
-	}
-
 	#filtre_blue
 	{
 		margin: 0;
@@ -858,8 +858,6 @@ footer nav ul
 	#activites
 	{
 		width: 100%;
-		flex-direction: column;
-		align-items: center;
 		margin: auto;
 	}
 
@@ -918,16 +916,32 @@ footer nav ul
 
 }
 
-/*@media (min-width: 768px) and (max-width: 1388px)
+@media (min-width: 768px) and (max-width: 1388px)
 {
-	#bloc_page
+	body
 	{
-		width: 100%;
+		margin: 0;
+	}
+
+	#barre_recherche_texte
+	{
+		width: auto;
+	}
+
+	#bloc_page1
+	{
+		width: auto;
+		padding: 0;
+	}
+
+	header
+	{
+		padding: 5px;
 	}
 
 	#filtres_all
 	{
-		flex-wrap: wrap;
+		width: 100%;
 	}
 
 	section
@@ -945,39 +959,35 @@ footer nav ul
 	#hebergements
 	{
 		width: 100%;
-		flex-direction: column;
-		align-items: center;
-		background-color: white;
-	}
-
-	#hebergements figure
-	{
-		width: 90%;
-		flex-direction: column;
-		margin-left: 0;
-	}
-
-	#hebergements img
-	{
-		width: 100%;
 	}
 
 	#activites
 	{
 		width: 100%;
-		flex-direction: column;
-		align-items: center;
+		margin: auto;
 	}
 
 	#details_act
 	{
-		width: 90%;
-	}
-
-	#activites div, #activites figure
-	{
-		width: 90%;
 		align-items: center;
 		flex-direction: column;
 	}
-}*/
+
+		#activites figure
+	{
+		height: 300px;
+		margin: 10px;
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+	#bloc_page2
+	{
+		width: auto;
+	}
+
+	footer
+	{
+		width: 100%;
+	}
+}
