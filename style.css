@@ -49,7 +49,7 @@ ul
 	list-style-type: none;
 }
 
-#bloc_page1
+#bloc_page
 {
 	width: 100%;
 	max-width: 1280px;
@@ -148,7 +148,7 @@ ul li
 
 #filtre_blue a
 {
-	color: blue;
+	color: #0065FC;
 	font-weight: bold;
 }
 
@@ -189,6 +189,7 @@ ul li
 	height: 100%;
 	font-weight: bold;
 	padding-left: 5%;
+	padding-right: 0;
 	border: 1px solid #8080804d;
 	border-left-color: white;
 }
@@ -683,7 +684,7 @@ footer nav ul
 		width: auto;
 	}
 
-	#bloc_page1
+	#bloc_page
 	{
 		width: auto;
 		padding: 0;
@@ -804,7 +805,6 @@ footer nav ul
 	#populaires
 	{
 		width: 100%;
-		flex-direction: column;
 		align-items: center;
 	}
 
@@ -847,7 +847,7 @@ footer nav ul
 
 	#hebergements figcaption
 	{
-		width: 100%;
+		width: 280px;
 	}
 
 	#afficher
@@ -857,22 +857,7 @@ footer nav ul
 
 	#activites
 	{
-		width: 100%;
 		margin: auto;
-	}
-
-	#activites figure
-	{
-		height: 200px;
-		margin: 10px;
-		margin-right: 0;
-		margin-left: 0;
-	}
-
-	#details_act
-	{
-		align-items: center;
-		flex-direction: column;
 	}
 
 	#activites h2
@@ -880,19 +865,16 @@ footer nav ul
 		margin-left: 3%;
 	}
 
-	#activites h3
+	#activites figure
 	{
-		width: 72%;
+		height: 200px;
+		margin: 10px;
 	}
 
-	#activites figcaption
+	#details_act
 	{
-		width: 91%;
-	}
-
-	#activites:hover figcaption
-	{
-		width: 100%;
+		flex-wrap: wrap;
+		justify-content: center;
 	}
 
 	footer
@@ -916,7 +898,7 @@ footer nav ul
 
 }
 
-@media (min-width: 768px) and (max-width: 1388px)
+@media (min-width: 781px) and (max-width: 1388px)
 {
 	body
 	{
@@ -928,7 +910,7 @@ footer nav ul
 		width: auto;
 	}
 
-	#bloc_page1
+	#bloc_page
 	{
 		width: auto;
 		padding: 0;
@@ -952,8 +934,15 @@ footer nav ul
 	#populaires
 	{
 		width: 100%;
-		flex-direction: column;
 		align-items: center;
+	}
+
+	#popu
+	{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: center;
 	}
 
 	#hebergements
@@ -969,25 +958,29 @@ footer nav ul
 
 	#details_act
 	{
-		align-items: center;
-		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	#notre_dame_longchamp
+	{
+		flex-direction: row;
+	}
+
+	#pomegues_frioul
+	{
+		flex-direction: row;
 	}
 
 	#activites figure
 	{
 		height: 300px;
 		margin: 10px;
-		margin-right: 0;
-		margin-left: 0;
-	}
-
-	#bloc_page2
-	{
-		width: auto;
 	}
 
 	footer
 	{
 		width: 100%;
+		margin-left: 0;
 	}
 }
