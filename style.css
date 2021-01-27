@@ -373,6 +373,7 @@ section
 	width: 220px;
 	padding-left: 10px;
 	padding-top: 4px;
+	cursor: pointer;
 }
 
 #hebergements img
@@ -454,6 +455,7 @@ section
 	float: right;
 	width: 51%;
     padding-left: 4%;
+    cursor: pointer;
 }
 
 #populaires h2
@@ -595,6 +597,7 @@ section
     width: 290px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    cursor: pointer;
 }
 
 
