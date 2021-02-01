@@ -59,29 +59,18 @@ ul
 {
 	display: flex;
 	margin-bottom: 20px;
-	justify-content: space-between;
 }
 
 #logo
 {
 	padding-top: 20px;
-}
-
-#navigation
-{
-	width: 100%;
+	flex-grow: 1;
 }
 
 #titre_principal nav ul
 {
 	display: flex;
-	justify-content: flex-end;
 	font-size: 0.9em;
-}
-
-ul li
-{
-	margin: 0;
 }
 
 #titre_principal li
@@ -89,20 +78,9 @@ ul li
 	padding-top: 30px;
 }
 
-#blbl
-{
-	display: flex;
-}
-
 #barre_recherche_texte
 {
 	margin-bottom: 15px;
-}
-
-#filtres
-{
-	display: flex;
-	align-items: center;
 }
 
 .filtre_n:hover
@@ -126,6 +104,11 @@ ul li
 	border-top: 3px solid #0065fc00;
 	order: 1;
 	margin-left: 70px;
+	padding-top: 30px;
+	color: #0065FC;
+	font-weight: bold;
+	font-size: 0.9em;
+
 }
 
 #filtre_blue a
@@ -193,6 +176,14 @@ ul li
 	flex-wrap: wrap;
 }
 
+#filtres
+{
+	display: flex;
+	align-items: center;
+	margin-left: 0;
+	margin-right: 40px;
+}
+
 .cartouche
 {
 	display: flex;
@@ -217,12 +208,6 @@ ul li
 {
 	margin-left: 5px;
 	padding-right: 10px;
-}
-
-#filtres
-{
-	margin-left: 0;
-	margin-right: 40px;
 }
 
 .cercle
@@ -600,28 +585,18 @@ footer nav ul
 
 	#titre_principal
 	{
-		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: center;
 	}
 
 	#titre_principal nav ul
 	{
-		justify-content: space-around;
+		margin-left: 0;
 	}
 
 	#logo
 	{
-		display: flex;
-		justify-content: space-between;
-		padding: 10px;
-	}
-
-	#logo ul
-	{
-		display: inline-block;
-	}
-
-	#logo li
-	{
+		padding-left: 10px;
 		padding-top: 15px;
 	}
 
@@ -642,14 +617,22 @@ footer nav ul
 
 	#filtre_blue
 	{
+		order: 0;
+		padding-right: 10px;
 		margin: 0;
+		border-top: none;
+	}
+
+	#filtre_blue:hover
+	{
+		border-top: none;
 	}
 
 	.filtre_n
 	{
 		border-bottom: 3px solid lightgray;
 		margin: 0;
-		padding: 41px;
+		padding: 40px;
 		padding-bottom: 10px;
 		border-top: none;
 	}
@@ -673,16 +656,6 @@ footer nav ul
 
 	}
 
-	#cartouche_eco
-	{
-		margin-bottom: 5%;
-	}
-
-	#cartouchef
-	{
-		margin-bottom: 5%;
-	}
-
 	section
 	{
 		flex-direction: column-reverse;
@@ -690,7 +663,8 @@ footer nav ul
 
 	#populaires
 	{
-		width: 100%;	}
+		width: 100%;	
+	}
 
 	#populaires h2
 	{
@@ -727,7 +701,7 @@ footer nav ul
 
 	#afficher
 	{
-		margin-left: 0;
+		margin-left: 5px;
 	}
 
 	#activites h2
@@ -790,9 +764,9 @@ footer nav ul
 		padding: 5px;
 	}
 
-	#filtres_all
+	#titre_principal ul
 	{
-		width: 100%;
+		margin-left: 0;
 	}
 
 	section
