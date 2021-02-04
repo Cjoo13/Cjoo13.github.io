@@ -53,6 +53,22 @@ ul
 	padding-top: 0px;
 }
 
+section
+{
+	display: flex;
+}
+
+.fa-star, .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog, .fa-info-circle
+{
+	color: #0065FC;
+}
+
+.fa-star
+{
+	font-size: 10px;
+}
+
+
 /* HEADER */
 
 #titre_principal
@@ -78,14 +94,10 @@ ul
 	padding-top: 30px;
 }
 
-#barre_recherche_texte
-{
-	margin-bottom: 15px;
-}
-
 .filtre_n:hover
 {
     border-top: 3px solid #0065FC;
+    color: #0065FC;
 }
 
 .filtre_n a:hover
@@ -126,6 +138,11 @@ ul
 {
 	display: flex;
 	margin-bottom: 10px;
+}
+
+#barre_recherche_texte
+{
+	margin-bottom: 15px;
 }
 
 #ping
@@ -197,10 +214,6 @@ ul
 .cartouche:hover
 {
 	transform: scale(1.02);
-}
-
-.cartouche p:hover
-{
 	color: #0065FC;
 }
 
@@ -236,16 +249,9 @@ ul
 
 /* Article de la 1ère section qui concerne les hebergements principaux */
 
-section
-{
-	display: flex;
-}
 
 #hebergements
 {
-	display: flex;
-	width: 68%;
-	flex-direction: column;
 	margin-right: 39px;
 	margin-top: 30px;
 	margin-bottom: 30px;
@@ -305,16 +311,6 @@ section
 	object-fit: cover;
 }
 
-.fa-star, .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog, .fa-info-circle
-{
-	color: #0065FC;
-}
-
-.fa-star
-{
-	font-size: 10px;
-}
-
 #hebergements figure h3
 {
 	padding-top: 2px;
@@ -332,6 +328,7 @@ section
 	margin-bottom: 40px;
 	font-weight: bold;
 	font-size: 1.3em;
+	cursor: pointer;
 }
 
 /* Aside de la 1ère section qui concerne les hebergements populaires */ 
