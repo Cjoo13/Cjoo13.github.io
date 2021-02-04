@@ -5,10 +5,15 @@ body
 	font-family:'Raleway', sans-serif;
 }
 
-body, nav, ul, p, h2, h3
+body, nav, ul, p, h2, h3, h1
 {
 	margin: 0;
 	padding: 0;
+}
+
+h1
+{
+	font-size: 1.2em;
 }
 
 h3
@@ -345,11 +350,13 @@ section
 	border-radius: 10px;
 }
 
-#populaires img
+#titre_popu
 {
-	height: 100%;
-	width: 45%;
-	object-fit: cover;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	padding-right: 5%;
+	margin-left: 5%;
 }
 
 #populaires figure
@@ -361,6 +368,13 @@ section
 	margin-top: 13px;
 	border-radius: 10px;
 	box-shadow: 0 4px 6px #0000001f;
+}
+
+#populaires img
+{
+	height: 100%;
+	width: 45%;
+	object-fit: cover;
 }
 
 #populaires figure:hover
@@ -394,21 +408,7 @@ section
 	margin-bottom: 10px;
 }
 
-#titre_popu
-{
-	display: flex;
-	justify-content: space-between;
-	align-items: baseline;
-	padding-right: 5%;
-	margin-left: 5%;
-}
-
 /* Article de la 2ème section qui concerne les activités */
-
-#activites h2
-{
-	margin-bottom: 20px;
-}
 
 #details_act
 {
@@ -439,6 +439,11 @@ section
 #activites figure:hover
 {
 	transform: scale(1.02);
+}
+
+#activites h2
+{
+	margin-bottom: 20px;
 }
 
 #pomegues_frioul
